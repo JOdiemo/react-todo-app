@@ -1,0 +1,7 @@
+.Header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-transform: lowercase;
+  text-align: center;
+}
