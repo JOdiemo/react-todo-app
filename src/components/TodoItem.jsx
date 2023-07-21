@@ -28,6 +28,12 @@ const TodoItem = ({ itemProp, handleChange, delTodo }) => {
     textDecoration: 'line-through',
   };
 
+  const handleUpdatedDone = (event) => {
+    if (event.key === 'Enter') {
+      setediting(false);
+    }
+  };
+
   return (
     <li className="item">
       <div className="content" style={viewmode}>
@@ -47,7 +53,7 @@ const TodoItem = ({ itemProp, handleChange, delTodo }) => {
         value={itemProp.title}
         className="textInput"
         style={editmode}
-        onChange={(e) => console.log(e.target.value, itemProp.id)}
+        onKeyDown={handleUpdatedDone}
       />
     </li>
   );

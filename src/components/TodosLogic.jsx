@@ -47,7 +47,6 @@ const TodosLogic = () => {
       completed: false,
     };
     setTodos([...todos, newTodo]);
-    console.log(todos);
   };
   return (
     <div>
